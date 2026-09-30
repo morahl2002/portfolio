@@ -13,13 +13,13 @@ export default function About() {
             accessible, familiar and fun.
           </p>
           <p>
-            I’ve always been creative, so I started out in UX/UI before
+            I&apos;ve always been creative, so I started out in UX/UI before
             branching into the more technical side of things, picking up the
             basics of full-stack development. My aim is to use both skill sets
             together to become a well-rounded web developer.
           </p>
           <p>
-            When I’m not hunched over my computer, I can be found lost in a
+            When I&apos;m not hunched over my computer, I can be found lost in a
             comic book or rearranging my LEGO collection for the 100th time.
           </p>
         </div>

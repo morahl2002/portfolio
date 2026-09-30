@@ -1,7 +1,12 @@
 function Face({ src }: { src: string }) {
-  return <img src={src} alt="" className="inline-face" />
+  return (
+    <img 
+      src={src} 
+      alt="" 
+      className="inline-block h-32 w-32 object-cover align-middle animate-fade-in-up" 
+    />
+  )
 }
-
 const roles = [
   'A Daughter',
   'A Sister',
@@ -16,9 +21,9 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto max-w-314 border-b-2 border-white px-4 py-12 text-center"
+      className="mx-auto max-w-314 border-b-2 border-white px-4 pt-24 pb-44 text-center"
     >
-      <h1 className="display display-xl">
+      <h1 className="animate-fade-in-up display display-xl">
         Kia ora, <Face src="/images/kid-1.png" /> Talofa,{' '}
         <Face src="/images/kid-2.png" /> Fakaalofa lahi atu. I’m{' '}
         <span className="text-brand-yellow">Morah</span>,{' '}
