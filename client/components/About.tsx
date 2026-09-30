@@ -27,7 +27,7 @@ export default function About() {
 
       <figure className="w-64 rotate-2 bg-white p-2 pb-20 shadow-xl">
         <img
-          src="/images/morah-polaroid.jpg"
+          src="/images/polaroid.JPG"
           alt="Young Morah posing with hands under her chin in a pink T-shirt"
           className="aspect-square w-full object-cover"
         />

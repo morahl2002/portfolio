@@ -19,10 +19,10 @@ export default function Hero() {
       className="mx-auto max-w-314 border-b-2 border-white px-4 py-12 text-center"
     >
       <h1 className="display display-xl">
-        Kia ora, <Face src="/images/face-1.jpg" /> Talofa,{' '}
-        <Face src="/images/face-2.jpg" /> Fakaalofa lahi atu. I’m{' '}
+        Kia ora, <Face src="/images/kid-1.png" /> Talofa,{' '}
+        <Face src="/images/kid-2.png" /> Fakaalofa lahi atu. I’m{' '}
         <span className="text-brand-yellow">Morah</span>,{' '}
-        <Face src="/images/face-3.jpg" /> and I am…
+        <Face src="/images/kid-3.png" /> and I am…
       </h1>
 
       <p className="mx-auto mt-8 max-w-5xl text-xl leading-relaxed">
