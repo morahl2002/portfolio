@@ -1,0 +1,32 @@
+.display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-stretch: 125%;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.display-xl {
+  font-size: clamp(2.5rem, 9vw, 5.5rem);
+}
+
+.display-lg {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+.body-mono {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  max-width: 72ch;
+}
+
+.inline-face {
+  display: inline-block;
+  height: 0.85em;
+  width: auto;
+  margin-inline: 0.1em;
+  vertical-align: -0.05em;
+  object-fit: cover;
+}
