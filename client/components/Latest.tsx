@@ -4,7 +4,7 @@ export default function LatestProjects() {
       id="projects"
       className="mx-auto max-w-314 border-b-2 border-white px-7 py-12"
     >
-      <div className="mb-4 flex items-end justify-between">
+      <div className="mb-4 flex items-end justify-between pb-8">
         <h2 className="display display-lg text-brand-yellow">
           Latest projects
         </h2>
@@ -28,7 +28,7 @@ export default function LatestProjects() {
           </div>
         </a>
 
-        <h3 className="display display-lg mt-4">
+        <h3 className="display display-lg mt-4 py-4">
           <span className="text-brand-yellow">Momodex</span>
           <br />/ Web development
         </h3>

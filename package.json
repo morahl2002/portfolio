@@ -28,7 +28,9 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "animate.css": "^4.1.1",
     "express": "^4.22.1",
+    "framer-motion": "^13.4.6",
     "knex": "^2.5.1",
     "sqlite3": "^5.1.7",
     "superagent": "^10.2.2",
