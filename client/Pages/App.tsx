@@ -1,11 +1,11 @@
 import { useFruits } from '../hooks/useFruits.ts'
-import About from './About.tsx'
-import Connect from './Connect.tsx'
-import Header from './Header.tsx'
-import Hero from './Hero.tsx'
-import LatestProjects from './Latest.tsx'
-import Marquee from './Marquee.tsx'
-import Reveal from './Reveal'
+import About from '../components/About.tsx'
+import Connect from '../components/Connect.tsx'
+import Header from '../components/Header.tsx'
+import Hero from '../components/Hero.tsx'
+import LatestProjects from '../components/Latest.tsx'
+import Marquee from '../components/Marquee.tsx'
+import Reveal from '../components/Reveal.tsx'
 
 
 function App() {
