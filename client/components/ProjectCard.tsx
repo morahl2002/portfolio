@@ -3,15 +3,11 @@ import ButtonLink from './ButtonLink'
 
 interface ProjectCardProps {
   project: Project
-  /** Crops the image to a short banner (used on the home page) */
-  compact?: boolean
-  /** Match the heading level to the page's outline */
   headingLevel?: 'h2' | 'h3'
 }
 
 export default function ProjectCard({
   project,
-  compact = false,
   headingLevel: Heading = 'h3',
 }: ProjectCardProps) {
   const { title, category, description, image, imageAlt, href } = project
@@ -22,16 +18,14 @@ export default function ProjectCard({
         src={image}
         alt={imageAlt}
         loading="lazy"
-        className={`w-full border-2 border-white object-cover object-top ${
-          compact ? 'h-75' : 'h-auto'
-        }`}
+        className="h-auto w-full border-2 border-white"
       />
 
-      <Heading className="display display-lg mt-4">
+      <Heading className="display display-lg mt-4 pt-4">
         <span className="text-brand-yellow">{title}</span> / {category}
       </Heading>
 
-      <p className="body-mono mt-6 max-w-none">{description}</p>
+      <p className="body-mono mt-6 max-w-full">{description}</p>
 
       {href && <ButtonLink href={href}>Explore</ButtonLink>}
     </article>

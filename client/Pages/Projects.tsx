@@ -1,22 +1,23 @@
-import { Link } from 'react-router'
-import { projects } from '../utils/projects'
 import ProjectCard from '../components/ProjectCard'
+import Reveal from '../components/Reveal'
+import { projects } from '../utils/projects'
 
 export default function Projects() {
-  const [latest] = projects
-
   return (
-    <section
-      id="projects"
-      className="mx-auto max-w-314 border-b-2 border-white px-7 py-12"
-    >
-      <div className="mb-4 flex items-end justify-between">
-        <h2 className="display display-lg text-brand-yellow pb-4">
-          Latest projects
-        </h2>
-      </div>
+    <>
+      <Reveal>
+        <section className="mx-auto max-w-314 border-b-2 border-white px-7 py-12 text-center">
+          <h1 className="display display-xl">Projects</h1>
+        </section>
+      </Reveal>
 
-      <ProjectCard project={latest} compact />
-    </section>
+      {projects.map((project) => (
+        <Reveal key={project.slug}>
+          <section className="mx-auto max-w-314 border-b-2 border-white px-7 py-12">
+            <ProjectCard project={project} headingLevel="h2" />
+          </section>
+        </Reveal>
+      ))}
+    </>
   )
 }

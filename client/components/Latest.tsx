@@ -43,7 +43,7 @@ export default function LatestProjects() {
         </p>
 
         <a
-          href="/projects/momodex"
+          href="/projects"
           className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-yellow px-4 py-3 font-bold text-brand-blue"
         >
           Explore <span aria-hidden="true">→</span>

@@ -10,7 +10,7 @@ export const projects: Project[] = [
     image: '/images/momodex-bento.png',
     imageAlt:
       'Momodex landing page over a close-up of a tūī, with screens for logging an observation, battle cards and achievements',
-    href: 'https://github.com/your-handle/momodex',
+    href: 'https://github.com/Hotoke-2026/Momodex',
   },
   {
     slug: 'z-energy-redesign',
@@ -18,9 +18,9 @@ export const projects: Project[] = [
     category: 'UX design',
     description:
       'Built as a group project for Mission Ready HQ, the brief was about redesigning Z Energy’s station locator and fuel price comparison experience to better serve mobile users and road trip travellers.',
-    image: '/images/z-energy-cover.jpg',
+    image: '/images/Z.png',
     imageAlt:
       'Redesigned Z Energy station locator showing a map, station details and service filters',
-    href: 'https://www.figma.com/your-project',
+    href: 'https://github.com/Hotoke-2026/Momodex',
   },
 ]
