@@ -1,0 +1,52 @@
+@theme {
+  --color-brand-blue: #1c41d2;
+  --color-brand-yellow: #ffc61a;
+  --color-brand-ink: #f8f9fd;
+
+  --font-display: 'Archivo', 'Arial Black', sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  --animate-marquee: marquee 45s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-brand-blue);
+  color: var(--color-brand-ink);
+  font-family: var(--font-mono);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-brand-yellow);
+  outline-offset: 3px;
+}
+
+/* Tech stack marquee: pauses on hover/focus, static + wrapped if motion is reduced */
+.marquee-track:hover,
+.marquee-track:focus-within {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .marquee-dupe {
+    display: none;
+  }
+}
