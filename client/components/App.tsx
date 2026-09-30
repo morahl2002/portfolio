@@ -1,14 +1,14 @@
 import { useFruits } from '../hooks/useFruits.ts'
 import Header from './Header.tsx'
+import Hero from './Hero.tsx'
 
 function App() {
-  const { data } = useFruits()
 
   return (
     <>
       <div className="app">
         <Header />
-        
+        < Hero />
       </div>
     </>
   )
