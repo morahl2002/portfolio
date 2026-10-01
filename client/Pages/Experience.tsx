@@ -20,7 +20,7 @@ export default function Experience() {
         </section>
       </Reveal>
 
-      <ProjectSection title="Work experience">
+      <ProjectSection>
         <div className="space-y-10">
           {experience.map((job) => (
             <TimelineEntry
