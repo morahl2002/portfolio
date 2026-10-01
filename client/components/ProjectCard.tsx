@@ -10,7 +10,7 @@ export default function ProjectCard({
   project,
   headingLevel: Heading = 'h3',
 }: ProjectCardProps) {
-  const { title, category, description, image, imageAlt, href } = project
+  const { title, category, description, image, imageAlt, path } = project
 
   return (
     <article>
@@ -27,7 +27,11 @@ export default function ProjectCard({
 
       <p className="body-mono mt-6 max-w-full">{description}</p>
 
-      {href && <ButtonLink href={href}>Explore</ButtonLink>}
+      {path && (
+        <ButtonLink to={path} className="mt-6">
+          Explore
+        </ButtonLink>
+      )}
     </article>
   )
 }

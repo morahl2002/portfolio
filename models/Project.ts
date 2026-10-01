@@ -1,5 +1,4 @@
 export type ProjectCategory = 'Web development' | 'UX design'
-
 export interface Project {
   slug: string
   title: string
@@ -7,5 +6,5 @@ export interface Project {
   description: string
   image: string
   imageAlt: string
-  href?: string
+  path?: string
 }
