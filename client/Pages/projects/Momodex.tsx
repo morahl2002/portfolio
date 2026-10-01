@@ -2,14 +2,22 @@ import ButtonLink from '../../components/ButtonLink'
 import ImageGallery from '../../components/ImageGallery'
 import ProjectSection from '../../components/ProjectSection'
 import Reveal from '../../components/Reveal'
+import TechBadges from '../../components/TechBadges'
+import { findBadges } from '../../utils/techstack'
 
-const techstack = [
-  'Frontend: React, TypeScript, TanStack Query, Tailwind CSS',
-  'Backend: Express, Knex, SQLite',
-  'Auth: Auth0',
-  'AI/Media: Google Gemini (species identification), Cloudinary (image uploads)',
-  'Testing: Vitest',
-]
+const techstack = findBadges([
+  'React',
+  'TypeScript',
+  'React Query',
+  'Tailwind CSS',
+  'Express.js',
+  'Knex',
+  'SQLite',
+  'Auth0',
+  'Google Gemini',
+  'Cloudinary',
+  'Vitest',
+])
 
 const features = [
   'AI-powered species identification from a photo upload',
@@ -29,11 +37,11 @@ export default function Momodex() {
             Web development
           </p>
           <div className="mt-6 flex justify-center gap-3">
-            <ButtonLink href="https://your-demo-url.example.com" arrow={false}>
+            <ButtonLink href="https://momodex.onrender.com/" arrow={false}>
               Demo
             </ButtonLink>
             <ButtonLink
-              href="https://github.com/your-handle/momodex"
+              href="https://github.com/morahl2002"
               arrow={false}
             >
               GitHub
@@ -94,11 +102,7 @@ export default function Momodex() {
             <h2 className="display display-lg mb-4 text-brand-yellow">
               Techstack
             </h2>
-            <ul className="body-mono max-w-full list-disc pl-5">
-              {techstack.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            <TechBadges badges={techstack} />
           </div>
         </section>
       </Reveal>

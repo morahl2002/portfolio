@@ -53,3 +53,22 @@ export const techStack: TechBadge[] = [
   badge('Prettier', 'prettier-%23F7B93E.svg?style=for-the-badge&logo=prettier&logoColor=black'),
   badge('Trello', 'Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white'),
 ]
+
+
+const projectExtras: TechBadge[] = [
+  badge('Knex', 'Knex.js-D26B38?style=for-the-badge&logo=knexdotjs&logoColor=white'),
+  badge('Auth0', 'Auth0-%23EB5424.svg?style=for-the-badge&logo=auth0&logoColor=white'),
+  badge('Google Gemini', 'Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white'),
+  badge('Cloudinary', 'Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white'),
+]
+
+
+export function findBadges(names: string[]): TechBadge[] {
+  const all = [...techStack, ...projectExtras]
+
+  return names.map((name) => {
+    const found = all.find((tech) => tech.name === name)
+    if (!found) throw new Error(`No tech badge named "${name}"`)
+    return found
+  })
+}
